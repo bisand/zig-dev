@@ -1,0 +1,14 @@
+# Zig build artifacts
+zig-cache/
+zig-out/
+.zig-cache/
+
+# Zig test output
+test-output.txt
+
+# Zig package manager artifacts (if any in future)
+.zigmod/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
