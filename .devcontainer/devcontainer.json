@@ -15,7 +15,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo sed -i 's/v3\\.21/edge/g' /etc/apk/repositories && sudo apk update && sudo apk upgrade && sudo apk add --no-cache zig zsh git curl && sed -i 's/^ZSH_THEME=.*/ZSH_THEME=\"bira\"/' ~/.zshrc",
+	"postCreateCommand": "sudo apk update && sudo apk upgrade && sudo apk add --no-cache zsh git && ./.devcontainer/install-zig.sh && sed -i 's/^ZSH_THEME=.*/ZSH_THEME=\"bira\"/' ~/.zshrc",
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
